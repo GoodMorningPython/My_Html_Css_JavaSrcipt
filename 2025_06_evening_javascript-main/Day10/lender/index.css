@@ -1,0 +1,55 @@
+.box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  .span {
+    display: block;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 300px;
+  .span {
+    display: block;
+  }
+}
+
+.item > .img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item > .info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  .span {
+    display: block;
+  }
+}
+
+.item > .info > .brand {
+  font-size: 13px;
+  .span {
+    display: block;
+  }
+}
+
+.item > .info > .name {
+  font-size: 13px;
+  font-weight: bold;
+  .span {
+    display: block;
+  }
+}
+.item > .info > .price {
+  font-size: 14px;
+  font-weight: bold;
+  .span {
+    display: block;
+  }
+}

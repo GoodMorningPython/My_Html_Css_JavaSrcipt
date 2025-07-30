@@ -1,0 +1,30 @@
+.box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
+}
+.userpro {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  height: 100px;
+}
+.userpro > image {
+  border-radius: 100%;
+  width: 80px;
+  height: 100px;
+  align-items: center;
+  padding: 10px;
+}
+.userpro > .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+}
+.userpro > .info > span {
+  font-size: 12px;
+}
+.userpro > .info > .email {
+  font-size: 10px;
+}

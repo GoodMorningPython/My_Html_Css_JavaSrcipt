@@ -1,0 +1,41 @@
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 300px;
+}
+
+.item > img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item > .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 10px;
+  gap: 5px;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+.item > .info > .brand {
+  font-size: 11px;
+}
+
+.item > .info > .name {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.item > .info > .price {
+  font-size: 13px;
+}
